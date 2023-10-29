@@ -104,3 +104,18 @@ Integração entre Pedidos e Produtos:
 
 Ao criar/editar um pedido, o usuário seleciona produtos a partir de uma lista predefinida.
 O total do pedido é calculado com base nos preços desses produtos.
+
+
+IDEs RECOMENDADAS E SEUS USOS
+Spring Tool Suite (STS) / IntelliJ IDEA:
+
+Uso: Desenvolvimento de backend e frontend.
+Processo: Durante todo o desenvolvimento do backend com Spring Boot e trabalhos com Thymeleaf.
+Visual Studio Code (VSCode):
+
+Uso: Estilização e lógica do frontend.
+Processo: Principalmente na fase de estilização e desenvolvimento frontend e potencial desenvolvimento mobile com React Native.
+Android Studio (Opcional):
+
+Uso: Desenvolvimento mobile com Flutter.
+Processo: Caso opte por Flutter para a versão mobile do aplicativo.

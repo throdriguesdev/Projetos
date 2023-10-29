@@ -1,3 +1,4 @@
+ 
 Sistema de Gerenciamento de Pedidos para Hamburgueria
 Uma aplicação para gerenciar os pedidos de uma hamburgueria local, fornecendo um meio eficaz de registrar, rastrear e gerar cupons sem valor fiscal para os pedidos.
 

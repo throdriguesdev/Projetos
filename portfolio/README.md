@@ -1,122 +1,63 @@
- 
 Sistema de Gerenciamento de Pedidos para Hamburgueria
 Uma aplicação para gerenciar os pedidos de uma hamburgueria local, fornecendo um meio eficaz de registrar, rastrear e gerar cupons sem valor fiscal para os pedidos.
 
 TECNOLOGIAS
 Backend:
-Principal: Java com Spring Boot
-Descrição: Framework para criação de aplicativos web com Java.
-Alternativas: Quarkus, Micronaut
+Principal: Node.js com Express.js
+Descrição: Framework em JavaScript para construção de servidores web.
+Alternativas: Koa, Hapi.js
+
 Banco de Dados:
-Desenvolvimento: H2 (banco de dados em memória)
-Produção: PostgreSQL, MySQL
-Alternativas: MariaDB, SQLite
+Desenvolvimento: SQLite
+Produção: PostgreSQL, MongoDB
+Alternativas: MySQL, MariaDB
+
 Frontend:
-Engine de Templates: Thymeleaf
-
-Descrição: Permite criar páginas web dinâmicas usando HTML, CSS e lógica Java.
-Alternativas: FreeMarker, JSP
-Estilização: HTML, CSS
-
+Principal: React.js
+Descrição: Biblioteca JavaScript para construção de interfaces de usuário.
+Alternativas: Vue.js, Angular
+Estilização: CSS-in-JS, SASS
 Lógica do Cliente: JavaScript
 
-Alternativas: TypeScript
+Autenticação:
+Principal: Passport.js
+Descrição: Middleware de autenticação para Node.js.
+Alternativas: JWT, OAuth
+
 PASSO A PASSO
-CONFIGURAÇÃO INICIAL
-
-Utilize o Spring Initializr para configurar o projeto.
-Inclua as dependências: Web, Thymeleaf, JPA, H2.
-DESENVOLVIMENTO DO BACKEND
-
-Crie entidades (Pedido, Produto, Cliente).
-Configure os repositórios e serviços.
-FRONTEND
-
-Utilize Thymeleaf para as páginas de interface.
-Estilize com HTML e CSS.
-AUTENTICAÇÃO
-
-Implemente o Spring Security.
-Configure a página de login e proteção de rotas.
-TESTES E Q/A
-
-Escreva e execute testes unitários e de integração.
+CONFIGURAÇÃO INICIAL:
+Inicialize um novo projeto Node.js.
+Instale as dependências relevantes (express, sequelize, react, etc.).
+DESENVOLVIMENTO DO BACKEND:
+Crie modelos (Pedido, Produto, Cliente) usando um ORM como Sequelize.
+Configure as rotas e os controladores com Express.js.
+FRONTEND:
+Configure o React.js e crie componentes para as páginas relevantes.
+Estilize os componentes conforme necessário.
+AUTENTICAÇÃO:
+Integre o Passport.js ao seu backend.
+Configure estratégias de autenticação e proteja as rotas necessárias.
+TESTES E Q/A:
+Use ferramentas como jest e supertest para testes unitários e de integração.
 Realize testes manuais para garantir a qualidade.
-HOSPEDAGEM EM CONTAINER FREE
+HOSPEDAGEM EM CONTAINER FREE:
+Principal: Heroku (com suporte a Node.js e PostgreSQL)
+Alternativa: Vercel (para frontend se for separado do backend)
 
-Principal: Heroku (integrado ao PostgreSQL).
-Alternativa: GitHub Pages (apenas frontend se separado).
-VERSÃO MOBILE (OPCIONAL)
+VERSÃO MOBILE (OPCIONAL):
+Principal: React Native
+Descrição: Ferramenta para construção de apps móveis usando React.
+Alternativas: Ionic, Expo
 
-Principal: React Native ou Flutter
-Descrição: Adaptar a interface para dispositivos móveis após ter a versão para PC funcional.
-Alternativas: Xamarin, Apache Cordova
-SUGESTÕES ADICIONAIS
-Para gráficos e análise de dados, considere a utilização de bibliotecas como Chart.js ou D3.js.
-Para o envio de cupons por e-mail, serviços como SendGrid ou JavaMailSender podem ser úteis.
-SISTEMA DE GERENCIAMENTO DE PEDIDOS PARA HAMBURGUERIA
-TECNOLOGIAS
-Backend:
-
-Tecnologia: Spring Boot (Java)
-Função: Lida com a lógica de negócios e a interação com o banco de dados.
-Banco de Dados:
-
-Tecnologia (Desenvolvimento): H2 Database
-Tecnologia (Produção): PostgreSQL
-Função: Armazenar dados de pedidos, produtos e clientes.
-Frontend:
-
-Tecnologia: Thymeleaf, HTML, CSS, JavaScript
-Função: Interface do usuário para interagir com o sistema.
-Autenticação:
-
-Tecnologia: Spring Security
-Função: Gerenciar acesso de usuários ao sistema.
-COMO O APLICATIVO FUNCIONARIA
-Início de Sessão:
-
-Usuário abre a aplicação e é apresentado à tela de login.
-Após inserir credenciais, é redirecionado para a página inicial.
-Gestão de Pedidos:
-
-Usuário pode ver uma lista de todos os pedidos.
-Cada pedido mostra detalhes, como cliente, itens e total.
-Usuário pode adicionar, editar ou remover um pedido.
-Gestão de Produtos:
-
-Usuário pode adicionar novos produtos (hambúrgueres, bebidas, etc.).
-Pode definir detalhes como nome, preço e descrição.
-Produtos adicionados ficam disponíveis para serem incluídos em pedidos.
-Geração de Cupons:
-
-Ao visualizar um pedido, o usuário pode gerar um cupom sem valor fiscal.
-Esse cupom pode ser impresso ou visualizado em formato digital.
-LÓGICA E INTEGRAÇÃO
-Interação com o Banco de Dados:
-
-Quando um pedido é feito, os detalhes são salvos no banco de dados.
-Cada pedido contém uma lista de produtos, que também são recuperados do banco de dados.
-Autenticação:
-
-O Spring Security verifica as credenciais fornecidas contra um conjunto armazenado no banco de dados.
-Apenas usuários autenticados podem acessar e gerenciar pedidos e produtos.
-Integração entre Pedidos e Produtos:
-
-Ao criar/editar um pedido, o usuário seleciona produtos a partir de uma lista predefinida.
-O total do pedido é calculado com base nos preços desses produtos.
-
-
-IDEs RECOMENDADAS E SEUS USOS
-Spring Tool Suite (STS) / IntelliJ IDEA:
-
-Uso: Desenvolvimento de backend e frontend.
-Processo: Durante todo o desenvolvimento do backend com Spring Boot e trabalhos com Thymeleaf.
+SUGESTÕES ADICIONAIS:
+Para gráficos e análise de dados, considere a utilização de bibliotecas como Chart.js.
+Para o envio de cupons por e-mail, serviços como SendGrid ou Nodemailer podem ser úteis.
+IDEs RECOMENDADAS E SEUS USOS:
 Visual Studio Code (VSCode):
 
-Uso: Estilização e lógica do frontend.
-Processo: Principalmente na fase de estilização e desenvolvimento frontend e potencial desenvolvimento mobile com React Native.
+Uso: Desenvolvimento backend com Node.js, desenvolvimento frontend com React.js, e potencial desenvolvimento mobile com React Native.
+Processo: Durante todas as fases de desenvolvimento.
 Android Studio (Opcional):
 
-Uso: Desenvolvimento mobile com Flutter.
-Processo: Caso opte por Flutter para a versão mobile do aplicativo.
+Uso: Se optar por alguma solução específica para Android que exija este IDE.
+Processo: Caso opte por uma solução nativa ou relacionada ao Android para a versão mobile do aplicativo.
